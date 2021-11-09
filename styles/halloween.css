@@ -1,0 +1,80 @@
+/********* HOJA DE ESTILO DEL EJERCICIO DE HALLOWEEN *********/
+/****************** 2º SMR - CURSO 2021/2022 *****************/
+/****************** AUTOR: DAVID MARTOS RUIZ *****************/
+
+@font-face {
+    font-family: titles;
+    src: url(../fonts/Titles.TTF);
+}
+
+@font-face {
+    font-family: blood;
+    src: url(../fonts/Blood.ttf);
+}
+
+@font-face {
+    font-family: text;
+    src: url(../fonts/Text.ttf);
+}
+
+
+body {background-color: black;}
+
+#container {position: relative; /*podrá moverse de sitio*/
+            width: 1500px;
+            height: 985px;
+            background-image: url(../images/background.jpg.webp);
+            margin: auto;
+            padding: 0px;
+            color: white;
+            font-size: 4em;
+            font-family: text;
+            }
+
+#p1 {padding: 20px 0 0 80px;
+    text-shadow: 5px 5px 5px red;
+    font-family: titles;}
+
+#p2 {font-family: text;
+    padding: 20px 0 0 550px;
+    font-size: 0.7em;
+    color:rgb(196, 33, 33);
+    text-shadow: 3px 3px 3px white;}
+
+#p3 {font-family: text;
+    padding: 0 0 0 580px;
+    font-size: 0.7em;
+    color:rgb(255, 102, 0);
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);}
+
+#event-details {font-size: 0.5em;
+                text-align: right;
+                padding:250px 40px 50px 50px;
+}
+
+#moon { position: absolute;
+        left: 680px;
+        top: 60px;
+        /*border: 1px solid white;*/
+        width: 100px;
+        height: 100px;}
+
+#witch {position:absolute;
+        left: 840px;
+        top: 60px;
+        width: 300px;
+        visibility: hidden;}
+
+#pumpkin {position: absolute;
+        left: 140px;
+        top: 550px;
+        /*border: 1px solid white;*/
+        width: 400px;
+        height: 400px;}
+
+#bats {position:absolute;
+        left: 600px;
+        top: 500px;
+        width: 300px;
+        visibility: hidden;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="./styles/halloween.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="./javascript/halloween.js"></script>
+</head>
+<body onload="sonar('canción');"><!--para canción de fondo-->
+    <!--este ejercicio no es responsive, será solo para PC-->
+    <audio id="grito">
+        <source src="./sounds/grito.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="grito2">
+        <source src="./sounds/grito2.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="canción" controls>
+        <source src="./sounds/lullaby.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="container">
+        <p id="p1">Scary Halloween Party</p>
+        <p id="p2">Don't touch the moon</p>
+        <p id="event-details">Come to my spine-chilling Halloween Party<br>
+        Place: Alora's Castle<br>
+        Date: 31 October 8:00 PM<br>
+        Don't forget to wear your most frightening costumes</p>
+        <p id="p3">Don't touch the pumpkin</p>
+        <div id="moon" onclick="mostrar('witch');sonar('grito')"
+        ondblclick="ocultar('witch');pausar('grito')">
+        <!--esto es para hacer el rectángulo para posteriormente encuadrarlo-->
+        </div>
+
+        <div id="pumpkin" onclick="mostrar('bats');sonar('grito2')"
+        ondblclick="ocultar('bats');pausar('grito2')">
+        <!--esto es para hacer el rectángulo para posteriormente encuadrarlo-->
+        </div>
+        <img id="witch" src="./images/witch.gif" alt="Witch"> <!--es importante que la imagen esté fuera del div del recuadro-->
+        <img id="bats" src="./images/bats.gif" alt="Bats"> <!--es importante que la imagen esté fuera del div del recuadro-->
+
+    </div>
+</body>
+</html>
